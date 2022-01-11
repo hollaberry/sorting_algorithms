@@ -25,8 +25,8 @@ return (list_len);
 
 void insertion_sort_list(listint_t **list)
 {
-  listint_t *current = Null, *first = Null;
-  listint_t *second = Null, *third = Null, *fourth = Null;
+  listint_t *current = NULL, *first = NULL;
+  listint_t *second = NULL, *third =NULL, *fourth = NULL;
 
   if (!list || !(*list) || len_list(*list) < 2)
     return;
