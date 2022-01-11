@@ -42,7 +42,7 @@ void insertion_sort_list(listint_t **list)
 	  third = current;
 	  fourth = current->next;
 
-	  second->next = four;
+	  second->next = fourth;
 
 	  if (fourth)
 	    fourth->prev = second;
@@ -51,7 +51,7 @@ void insertion_sort_list(listint_t **list)
 	  third->prev = first;
 
 	  if (first)
-	    first->next = three;
+	    first->next = third;
 	  else
 	    *list = third;
 	  second->prev = third;
