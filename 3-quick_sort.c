@@ -63,14 +63,13 @@ print_array(array, size);
 }
 }
 
-	if (array[right] < array[i + 1])
-	{
-		tmp = array[i + 1];
-		array[i + 1] = array[right];
-		array[right] = tmp;
-		print_array(array, size);
-	}
-
-	return (i + 1);
+if (array[right] < array[i + 1])
+{
+tmp = array[i + 1];
+array[i + 1] = array[right];
+array[right] = tmp;
+print_array(array, size);
 }
-    
+
+return (i + 1);
+}
